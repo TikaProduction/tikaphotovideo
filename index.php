@@ -98,12 +98,9 @@ $service =$_POST['checkbox'];
 ?>
 
 <script>
-    function toggleMute() {
+     function toggleMute() {
         var video = document.getElementById("myVideo");
         var button = document.getElementById("muteButton");
-
-        console.log("Vidéo trouvée :", video); // Log pour vérifier si l'élément vidéo est bien sélectionné
-        console.log("Vidéo muette ?", video.muted);
 
         if (video.muted) {
             video.muted = false;
@@ -115,7 +112,7 @@ $service =$_POST['checkbox'];
     }
     function myFunction() {
     var video = document.getElementById("myVideo");
-    video.muted = true;
+    video.muted = false;
     }
 </script>
 <style>
